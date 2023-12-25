@@ -1,0 +1,33 @@
+.padding {
+    padding: 5%!important;
+}
+.logo ion-icon{
+    font-size: 9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo img{
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo {
+    position: relative;
+    height: 250px;
+}
+ion-content {
+    --background: linear-gradient(10deg, #a0bcec 0%, #215ab7 100%);
+    //--ion-background-color: linear-gradient(#215ab7, #a0bcec);
+    //--ion-background-color: #3e78d8 !important;
+}
+ion-item {
+    --ion-background-color: transparent!important;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

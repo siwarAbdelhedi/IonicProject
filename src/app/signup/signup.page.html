@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <ion-content >
+    <div class="padding"> 
+      <div class="logo">
+        <ion-icon color="light" name="logo-electron"></ion-icon>
+      </div>
+
+      <form>
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+          <ion-item >
+            <ion-label color="light"></ion-label>
+            <ion-icon color="light" name="person-circle-outline"></ion-icon>
+            <ion-input formControlName="fullname" color="light" type="text" placeholder="UserName"></ion-input>
+          </ion-item>
+
+          <ion-item >
+            <ion-label color="light"></ion-label>
+            <ion-icon color="light" name="mail-outline"></ion-icon>
+            <ion-input formControlName="email" color="light" type="mail" placeholder="Email"></ion-input>
+          </ion-item>
+
+          <ion-item >
+            <ion-label color="light"></ion-label>
+            <ion-icon color="light" name="call-outline"></ion-icon>
+            <ion-input formControlName="mobile" color="light" type="number" placeholder="Mobile number"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+            <ion-label color="light"></ion-label>
+            <ion-icon color="light" name="lock-closed-outline"></ion-icon>
+            <ion-input  formControlName="password" color="light" type="password" placeholder="Password "></ion-input>
+          </ion-item>
+  
+           <!--<ion-item>
+             <ion-label color="light"></ion-label>
+             <ion-icon name="lock-closed-outline"></ion-icon>
+             <ion-input color="light" type="password" placeholder="Confirm Password"></ion-input>
+          </ion-item>
+          -->
+    
+        <br>
+        <ion-button color="light" expand="block" shape="round" fill="outline" type="submit">SignUp</ion-button>
+        </form>
+      </form>
+
+       
+
+  
+    </div>
+
+  </ion-content>
+</ion-content>

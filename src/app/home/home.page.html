@@ -1,20 +1,70 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card class="ion-no-margin">
+    <!--<ion-card-header>
+      <img src="assets/images/header.png" />
+      <ion-card-title>Bienvenue</ion-card-title>
+    </ion-card-header>
+  -->
+  
+  <img src="assets/images/header.png" />
+  <div class="logo">
+    <ion-icon name="logo-electron"></ion-icon>
+  </div>
+    <ion-card-title> Welcome</ion-card-title>
+    
+    <ion-card-subtitle class="ion-text-lowercase">
+    </ion-card-subtitle>
+    
+    <!--<ion-card-content>
+      <div class="signin-btns">
+        <ion-button size="small" fill="solid" shape="round" class="loginbtn">
+          Login
+        </ion-button>
+        <ion-button size="small" fill="outline" shape="round" color="dark">
+          SignIn
+        </ion-button>
+      </div>
+    </ion-card-content>
+    -->
+  </ion-card>
+  <div class="actions">
+    <div class="login-buttons">
+      <ion-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="separator">
+      <span> Or </span>
+      <span class="line left"></span>
+      <span class="line right"></span>
+    </div>
+    <ion-button class="signup-btn" expand="block"  routerLink="/signup">Signup with Email</ion-button>
+    <p class="login">Exicting user ? <br>
+      <ion-button class="login-btn" color=""  routerLink="/login"> Login </ion-button>
   </div>
 </ion-content>
+
+<!--<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      Search
+    </ion-tab-button>
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings"></ion-icon>
+      settings
+    </ion-tab-button>
+    <ion-tab-button tab="menu">
+      <ion-icon name="menu"></ion-icon>
+      Menu
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+-->
